@@ -83,7 +83,7 @@ struct openconnect_info *openconnect_vpninfo_new(const char *useragent,
 	vpninfo->process_auth_form = process_auth_form;
 	vpninfo->progress = progress;
 	vpninfo->cbdata = privdata ? : vpninfo;
-	vpninfo->xmlpost = 1;
+	vpninfo->xmlpost = 0;
 	vpninfo->verbose = PRG_TRACE;
 	vpninfo->try_http_auth = 1;
 	vpninfo->proxy_auth[AUTH_TYPE_BASIC].state = AUTH_DEFAULT_DISABLED;
